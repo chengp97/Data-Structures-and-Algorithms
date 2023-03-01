@@ -35,7 +35,7 @@ class LinkedList {
         this.count++
     }
 
-    gegetElementAt(index) {
+    getElementAt(index) {
         if (index >= 0 && index < this.count) {
             let node = this.head
             for (let i = 0; i < index && node != null; i++) {
