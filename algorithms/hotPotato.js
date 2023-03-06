@@ -2,9 +2,9 @@ import Queue from '../data-structures/Queue.js'
 function hotPotato(elementsList, num) {
     const queue = new Queue();
     const elimitatedList = [];
-    for (let i = 0; i < elementsList.length; i++) {
-        queue.enqueue(elementsList[i]); // {2}
-    }
+    elementsList.forEach((item) => {
+        queue.enqueue(item);
+    })
     while (queue.size() > 1) {
         for (let i = 0; i < num; i++) {
             queue.enqueue(queue.dequeue()); // {3}
