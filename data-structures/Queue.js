@@ -1,4 +1,4 @@
-class Queue {
+export default class Queue {
     constructor() {
         this.count = 0; // {1}
         this.lowestCount = 0; // {2}
@@ -48,20 +48,19 @@ class Queue {
         }
         return objString;
     }
-
 }
 
 
-const queue = new Queue();
+
+// const queue = new Queue();
 // console.log(queue.isEmpty());
+// queue.enqueue(1)
+// queue.enqueue(2)
+// queue.enqueue(3)
+// queue.enqueue(4)
 
-queue.enqueue(1)
-queue.enqueue(2)
-queue.enqueue(3)
-queue.enqueue(4)
-
-console.log(queue.isEmpty());
-console.log(queue.toString());
-console.log(queue.size());
-queue.dequeue()
-console.log(queue.dequeue());
+// console.log(queue.isEmpty());
+// console.log(queue.toString());
+// console.log(queue.size());
+// queue.dequeue()
+// console.log(queue.dequeue());
