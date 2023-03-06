@@ -21,7 +21,8 @@ function palindromeChecker(aString) {
     return isEqual;
 }
 
+let a = palindromeChecker('Abcba')
 
-console.log('abcba', palindromeChecker('a'));
+// console.log('abcba', palindromeChecker('abcbac'));
 
-console.log('abcbac', palindromeChecker('a'));
+// console.log('abcbac', palindromeChecker('a'));
